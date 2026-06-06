@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solid Inspiration | Canora Pats</title>
+
+  <!-- 検索避け：完全な非公開ではありませんが、検索結果に出にくくします -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+
+  <meta name="description" content="A quiet style board by Canora Pats: leather, brass, brown, British style, Italian automotive elegance, writing tools, interiors and archive inspirations.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-hero">
+    <div class="ornament" aria-hidden="true"></div>
+    <p class="eyebrow">Canora Pats presents</p>
+    <h1>Solid Inspiration</h1>
+    <p class="lead">革、真鍮、余白、道具のための静かな蒐集帖</p>
+    <p class="sublead">
+      Dark brown, brass, leather, British restraint and Italian automotive elegance.
+    </p>
+  </header>
+
+  <main>
+    <section class="panel intro-panel">
+      <div>
+        <h2>Style filter</h2>
+        <p>
+          このポータルは、単なるリンク集ではなく、色・素材・質感・実用品質の観点で
+          「Canora Pats / Solid Inspiration」に近いものを集めるための初期ボードです。
+        </p>
+      </div>
+      <ul class="filter-list" aria-label="style filter">
+        <li>Dark brown / Cognac / Oxblood / Beige</li>
+        <li>Leather / Bridle leather / Brass / Walnut / Wool / Silk</li>
+        <li>British restraint / Italian grand tourer elegance</li>
+        <li>Quiet luxury / Practical quality / Aging beautifully</li>
+      </ul>
+    </section>
+
+    <nav class="category-nav" aria-label="categories">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="Leather & Bags">Leather & Bags</button>
+      <button class="chip" data-filter="Writing & Desk">Writing & Desk</button>
+      <button class="chip" data-filter="British Style">British Style</button>
+      <button class="chip" data-filter="Italian Automotive">Italian Automotive</button>
+      <button class="chip" data-filter="Interior & Study">Interior & Study</button>
+      <button class="chip" data-filter="Articles & Videos">Articles & Videos</button>
+      <button class="chip" data-filter="Archive Inspirations">Archive Inspirations</button>
+    </nav>
+
+    <section class="toolbar panel">
+      <label for="search">Search</label>
+      <input id="search" type="search" placeholder="例：brown, brass, Zegna, Smythson, writing..." autocomplete="off">
+      <span id="count" class="count"></span>
+    </section>
+
+    <section id="cards" class="cards" aria-live="polite"></section>
+
+    <section class="panel note-panel">
+      <h2>Next step</h2>
+      <p>
+        初期版では手動 curated board として動作します。次段階では RSS / YouTube / ニュースレター等を
+        収集し、AIで「Canora fit score」を付与する仕組みに拡張できます。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Solid Inspiration by Canora Pats. Built as a private-style public GitHub Pages board.</p>
+  </footer>
+
+  <script>
+    const cardsEl = document.getElementById("cards");
+    const searchEl = document.getElementById("search");
+    const countEl = document.getElementById("count");
+    const chips = Array.from(document.querySelectorAll(".chip"));
+
+    let allItems = [];
+    let activeFilter = "all";
+
+    function scoreClass(score) {
+      if (score >= 90) return "excellent";
+      if (score >= 80) return "strong";
+      if (score >= 70) return "good";
+      return "reference";
+    }
+
+    function normalize(s) {
+      return (s || "").toString().toLowerCase();
+    }
+
+    function itemMatches(item, query) {
+      if (!query) return true;
+      const haystack = [
+        item.title, item.category, item.description, item.reason,
+        ...(item.tags || [])
+      ].map(normalize).join(" ");
+      return haystack.includes(normalize(query));
+    }
+
+    function render() {
+      const query = searchEl.value.trim();
+      const filtered = allItems.filter(item => {
+        const byCategory = activeFilter === "all" || item.category === activeFilter;
+        return byCategory && itemMatches(item, query);
+      });
+
+      countEl.textContent = `${filtered.length} items`;
+
+      cardsEl.innerHTML = filtered.map(item => `
+        <article class="card">
+          <div class="card-topline">
+            <span class="category">${item.category}</span>
+            <span class="score ${scoreClass(item.score)}">${item.score}</span>
+          </div>
+          <h3><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h3>
+          <p class="description">${item.description}</p>
+          <p class="reason">${item.reason}</p>
+          <div class="tags">
+            ${(item.tags || []).map(tag => `<span>${tag}</span>`).join("")}
+          </div>
+        </article>
+      `).join("");
+
+      if (filtered.length === 0) {
+        cardsEl.innerHTML = `<p class="empty">該当するカードがありません。</p>`;
+      }
+    }
+
+    async function init() {
+      try {
+        const response = await fetch("data.json", { cache: "no-store" });
+        const data = await response.json();
+        allItems = (data.items || []).sort((a, b) => b.score - a.score);
+        render();
+      } catch (error) {
+        cardsEl.innerHTML = `<p class="empty">data.json を読み込めませんでした。</p>`;
+        console.error(error);
+      }
+    }
+
+    chips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        activeFilter = chip.dataset.filter;
+        chips.forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        render();
+      });
+    });
+
+    searchEl.addEventListener("input", render);
+    init();
+  </script>
+</body>
+</html>

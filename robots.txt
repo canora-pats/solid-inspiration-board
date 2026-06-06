@@ -1,0 +1,8 @@
+# Search avoidance for Solid Inspiration.
+# This site is public if hosted on GitHub Pages, but pages include noindex meta tags.
+# Do not add a sitemap unless you intentionally want search engines to discover the site.
+
+User-agent: *
+Disallow:
+
+Sitemap:

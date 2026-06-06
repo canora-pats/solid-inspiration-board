@@ -1,0 +1,318 @@
+{
+  "site": {
+    "title": "Solid Inspiration",
+    "author": "Canora Pats",
+    "description": "A quiet style board for brown, brass, leather, tools, interiors and archive inspirations."
+  },
+  "items": [
+    {
+      "title": "VULCANIZE LONDON",
+      "url": "https://vulcanize.jp/",
+      "category": "British Style",
+      "score": 94,
+      "description": "英国ラグジュアリーと王室御用達系ブランドを横断して見るための基点。",
+      "reason": "Globe-Trotter、Smythson、Fox Umbrellasなど、英国的節度と上質な実用品の棚に近い。",
+      "tags": [
+        "British",
+        "quiet luxury",
+        "umbrella",
+        "luggage",
+        "royal warrant"
+      ]
+    },
+    {
+      "title": "BRITISH MADE",
+      "url": "https://www.british-made.jp/",
+      "category": "British Style",
+      "score": 93,
+      "description": "英国ブランドの服・靴・革小物を日本語で定点観測しやすいサイト。",
+      "reason": "GLENROYAL系のブライドルレザーや英国的生活感をまとめて眺められる。",
+      "tags": [
+        "British",
+        "leather",
+        "shoes",
+        "Glenroyal"
+      ]
+    },
+    {
+      "title": "GLENROYAL",
+      "url": "https://glenroyal.jp/",
+      "category": "Leather & Bags",
+      "score": 92,
+      "description": "ブライドルレザーの革小物・バッグの定番観測先。",
+      "reason": "ダークブラウン、オックスブラッド、堅牢な革質、経年変化という好みの中核に近い。",
+      "tags": [
+        "bridle leather",
+        "dark brown",
+        "oxblood",
+        "aging"
+      ]
+    },
+    {
+      "title": "Maserati × Zegna archive search",
+      "url": "https://www.google.com/search?q=Maserati+Zegna+Owner%27s+Collection+leather+bag",
+      "category": "Archive Inspirations",
+      "score": 91,
+      "description": "Maserati × Zegna Owner’s Collection系の過去品を探すための検索リンク。",
+      "reason": "ダークブラウン革、車内インテリア、旅行鞄、控えめなロゴ感の棚に非常に近い。",
+      "tags": [
+        "archive",
+        "Maserati",
+        "Zegna",
+        "dark brown",
+        "travel bag"
+      ]
+    },
+    {
+      "title": "Smythson",
+      "url": "https://www.smythson.com/uk/",
+      "category": "Writing & Desk",
+      "score": 89,
+      "description": "英国文具・レザー小物・ダイアリーの上質な基準点。",
+      "reason": "紙、革、筆記、整理という方向で、書斎や手帳の世界観に合いやすい。",
+      "tags": [
+        "stationery",
+        "diary",
+        "leather",
+        "British"
+      ]
+    },
+    {
+      "title": "FRAME",
+      "url": "https://www.frame.jp/",
+      "category": "British Style",
+      "score": 87,
+      "description": "英国靴や革製品を中心に、手仕事と質感で選ぶセレクトショップ。",
+      "reason": "ブランド単体ではなく、店の編集方針そのものが好みに近い可能性が高い。",
+      "tags": [
+        "shoes",
+        "leather",
+        "craft",
+        "select shop"
+      ]
+    },
+    {
+      "title": "Permanent Style",
+      "url": "https://www.permanentstyle.com/",
+      "category": "Articles & Videos",
+      "score": 86,
+      "description": "クラシックメンズウェア、素材、職人、品質を掘る読み物。",
+      "reason": "何を買うかより、なぜその素材・作り・色がよいのかを読むのに向く。",
+      "tags": [
+        "reading",
+        "menswear",
+        "craft",
+        "quality"
+      ]
+    },
+    {
+      "title": "ETTINGER",
+      "url": "https://ettinger.jp/",
+      "category": "Leather & Bags",
+      "score": 85,
+      "description": "英国王室御用達の革小物ブランド。",
+      "reason": "控えめで端正。色合わせ次第でダークブラウン〜内装差し色の候補になる。",
+      "tags": [
+        "wallet",
+        "British",
+        "royal warrant",
+        "leather"
+      ]
+    },
+    {
+      "title": "Berluti",
+      "url": "https://www.berluti.com/ja-jp/",
+      "category": "Leather & Bags",
+      "score": 84,
+      "description": "イタリア的な艶とパティーヌの美しさを見るための観測先。",
+      "reason": "Legno Bruciato系の深いブラウンや、革そのものを主役にした存在感が合う。",
+      "tags": [
+        "patina",
+        "Legno Bruciato",
+        "Italian",
+        "leather"
+      ]
+    },
+    {
+      "title": "Pen Online",
+      "url": "https://www.pen-online.jp/",
+      "category": "Articles & Videos",
+      "score": 84,
+      "description": "デザイン、道具、建築、時計、文化を横断する編集媒体。",
+      "reason": "写真とレイアウトを含め、iPad見開き的に楽しめる感性の補給源。",
+      "tags": [
+        "magazine",
+        "design",
+        "culture",
+        "tools"
+      ]
+    },
+    {
+      "title": "Casa BRUTUS",
+      "url": "https://casabrutus.com/",
+      "category": "Interior & Study",
+      "score": 83,
+      "description": "建築・インテリア・生活道具・旅館的空間の観測先。",
+      "reason": "書斎、家具、余白、質感を考える素材として相性がよい。",
+      "tags": [
+        "architecture",
+        "interior",
+        "study",
+        "magazine"
+      ]
+    },
+    {
+      "title": "The Armoury",
+      "url": "https://www.thearmoury.com/",
+      "category": "British Style",
+      "score": 82,
+      "description": "クラシックメンズウェアと職人性のある装いを見るための海外サイト。",
+      "reason": "派手さよりも素材・シルエット・道具性を重視する方向で参考になる。",
+      "tags": [
+        "classic menswear",
+        "tailoring",
+        "craft"
+      ]
+    },
+    {
+      "title": "PLOTTER",
+      "url": "https://www.plotter-japan.com/",
+      "category": "Writing & Desk",
+      "score": 82,
+      "description": "構想する人のためのシステム手帳・レザー道具。",
+      "reason": "編集者型・設計者型の道具として、機能と素材感がつながる。",
+      "tags": [
+        "planner",
+        "leather",
+        "system organizer",
+        "design"
+      ]
+    },
+    {
+      "title": "Kakimori",
+      "url": "https://kakimori.com/",
+      "category": "Writing & Desk",
+      "score": 81,
+      "description": "紙・インク・筆記具・オーダーノートの世界観。",
+      "reason": "書く道具を素材と手触りから選ぶ方向で、手帳・筆記具の好みに近い。",
+      "tags": [
+        "stationery",
+        "ink",
+        "notebook",
+        "writing"
+      ]
+    },
+    {
+      "title": "TRAVELER’S COMPANY",
+      "url": "https://www.travelers-company.com/",
+      "category": "Writing & Desk",
+      "score": 80,
+      "description": "革・真鍮・紙の経年変化を楽しむ道具ブランド。",
+      "reason": "真鍮と革、旅、紙という組み合わせが、静かな道具感に合う。",
+      "tags": [
+        "brass",
+        "leather",
+        "notebook",
+        "aging"
+      ]
+    },
+    {
+      "title": "Kirby Allison",
+      "url": "https://www.youtube.com/@kirbyallison",
+      "category": "Articles & Videos",
+      "score": 80,
+      "description": "クラシックメンズウェア、靴磨き、職人性、品質を掘るYouTubeチャンネル。",
+      "reason": "道具を長く手入れして使う文化を見るには相性がよい。",
+      "tags": [
+        "YouTube",
+        "craft",
+        "shoes",
+        "menswear"
+      ]
+    },
+    {
+      "title": "The Conran Shop",
+      "url": "https://www.conranshop.jp/",
+      "category": "Interior & Study",
+      "score": 79,
+      "description": "家具・照明・生活道具の編集型ショップ。",
+      "reason": "英国由来の生活編集感があり、書斎・LDの質感参照に向く。",
+      "tags": [
+        "interior",
+        "furniture",
+        "lighting",
+        "living"
+      ]
+    },
+    {
+      "title": "POSTALCO",
+      "url": "https://postalco.com/",
+      "category": "Writing & Desk",
+      "score": 78,
+      "description": "日用品の構造を見直し、道具として美しく整えるブランド。",
+      "reason": "過度な装飾ではなく、使うものの構造と質感を見る姿勢が近い。",
+      "tags": [
+        "tools",
+        "stationery",
+        "daily objects",
+        "quiet design"
+      ]
+    },
+    {
+      "title": "ZEGNA",
+      "url": "https://www.zegna.com/jp-ja/",
+      "category": "British Style",
+      "score": 78,
+      "description": "服地・織り・控えめな高級感の確認先。",
+      "reason": "マセラティ連携期の記憶につながる、布地と車内インテリア的な質感を追える。",
+      "tags": [
+        "Zegna",
+        "wool",
+        "fabric",
+        "quiet luxury"
+      ]
+    },
+    {
+      "title": "Maserati Store",
+      "url": "https://www.maserati.com/global/en/brand/maserati-store",
+      "category": "Italian Automotive",
+      "score": 77,
+      "description": "現行のマセラティ公式グッズ・ブランド世界観の確認先。",
+      "reason": "現在は以前のZegna連携期と雰囲気が違う可能性があるため、現行確認用。",
+      "tags": [
+        "Maserati",
+        "automotive",
+        "official",
+        "Italian"
+      ]
+    },
+    {
+      "title": "House & Garden UK",
+      "url": "https://www.houseandgarden.co.uk/",
+      "category": "Interior & Study",
+      "score": 76,
+      "description": "英国的な住まい・色・布・家具・部屋作りの参考媒体。",
+      "reason": "英国風書斎や落ち着いたインテリアの視覚資料として有効。",
+      "tags": [
+        "UK interior",
+        "house",
+        "garden",
+        "study"
+      ]
+    },
+    {
+      "title": "The Local Project",
+      "url": "https://thelocalproject.com/",
+      "category": "Interior & Study",
+      "score": 72,
+      "description": "現代建築・インテリアの映像的な質感参照。",
+      "reason": "木・石・光・陰影の見せ方が美しく、空間の質感を眺める用途に向く。",
+      "tags": [
+        "architecture",
+        "video",
+        "interior",
+        "texture"
+      ]
+    }
+  ]
+}
