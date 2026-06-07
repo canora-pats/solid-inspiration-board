@@ -1,12 +1,19 @@
 {
+  "settings": {
+    "max_total_auto_items": 60,
+    "request_interval_seconds": 1.2,
+    "image_max_bytes": 6000000,
+    "image_min_bytes": 8000
+  },
   "sources": [
     {
       "id": "vulcanize-brown",
       "title": "VULCANIZE LONDON brown search",
       "url": "https://vulcanize.jp/search?type=product&q=%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3",
       "category": "Search Shelves",
-      "base_score": 95,
-      "max_items": 8,
+      "base_score": 96,
+      "max_items": 10,
+      "featured_limit": 4,
       "tags": [
         "auto-collected",
         "VULCANIZE",
@@ -16,12 +23,44 @@
       ]
     },
     {
+      "id": "vulcanize-leather",
+      "title": "VULCANIZE LONDON leather search",
+      "url": "https://vulcanize.jp/search?type=product&q=%E3%83%AC%E3%82%B6%E3%83%BC",
+      "category": "Search Shelves",
+      "base_score": 94,
+      "max_items": 8,
+      "featured_limit": 3,
+      "tags": [
+        "auto-collected",
+        "VULCANIZE",
+        "leather",
+        "British"
+      ]
+    },
+    {
+      "id": "vulcanize-bag",
+      "title": "VULCANIZE LONDON bag search",
+      "url": "https://vulcanize.jp/search?type=product&q=%E3%83%90%E3%83%83%E3%82%B0",
+      "category": "Search Shelves",
+      "base_score": 92,
+      "max_items": 8,
+      "featured_limit": 3,
+      "tags": [
+        "auto-collected",
+        "VULCANIZE",
+        "bag",
+        "British",
+        "luggage"
+      ]
+    },
+    {
       "id": "etsy-brown-leather-brass",
       "title": "Etsy brown leather brass search",
       "url": "https://www.etsy.com/search?q=brown%20leather%20brass%20accessories",
       "category": "Search Shelves",
       "base_score": 90,
       "max_items": 8,
+      "featured_limit": 3,
       "tags": [
         "auto-collected",
         "Etsy",
@@ -38,12 +77,61 @@
       "category": "Search Shelves",
       "base_score": 88,
       "max_items": 8,
+      "featured_limit": 3,
       "tags": [
         "auto-collected",
         "Etsy",
         "rose gold",
         "brown leather",
         "accessories"
+      ]
+    },
+    {
+      "id": "etsy-oxblood-bridle",
+      "title": "Etsy oxblood bridle leather search",
+      "url": "https://www.etsy.com/search?q=oxblood%20bridle%20leather",
+      "category": "Search Shelves",
+      "base_score": 87,
+      "max_items": 8,
+      "featured_limit": 2,
+      "tags": [
+        "auto-collected",
+        "Etsy",
+        "oxblood",
+        "bridle leather",
+        "vintage"
+      ]
+    },
+    {
+      "id": "etsy-walnut-brass-desk",
+      "title": "Etsy walnut brass desk accessories search",
+      "url": "https://www.etsy.com/search?q=walnut%20brass%20desk%20accessories",
+      "category": "Search Shelves",
+      "base_score": 86,
+      "max_items": 8,
+      "featured_limit": 2,
+      "tags": [
+        "auto-collected",
+        "Etsy",
+        "walnut",
+        "brass",
+        "desk"
+      ]
+    },
+    {
+      "id": "etsy-copper-pen",
+      "title": "Etsy copper pen search",
+      "url": "https://www.etsy.com/search?q=copper%20pen",
+      "category": "Search Shelves",
+      "base_score": 84,
+      "max_items": 6,
+      "featured_limit": 2,
+      "tags": [
+        "auto-collected",
+        "Etsy",
+        "copper",
+        "pen",
+        "writing"
       ]
     }
   ]
