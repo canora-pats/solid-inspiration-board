@@ -1,6 +1,6 @@
 {
   "settings": {
-    "max_total_auto_items": 60,
+    "max_total_auto_items": 40,
     "request_interval_seconds": 1.2,
     "image_max_bytes": 6000000,
     "image_min_bytes": 8000
@@ -51,87 +51,6 @@
         "bag",
         "British",
         "luggage"
-      ]
-    },
-    {
-      "id": "etsy-brown-leather-brass",
-      "title": "Etsy brown leather brass search",
-      "url": "https://www.etsy.com/jp/search?q=brown+leather+brass",
-      "category": "Search Shelves",
-      "base_score": 90,
-      "max_items": 8,
-      "featured_limit": 3,
-      "tags": [
-        "auto-collected",
-        "Etsy",
-        "brown leather",
-        "brass",
-        "handmade",
-        "vintage"
-      ]
-    },
-    {
-      "id": "etsy-rose-gold-leather",
-      "title": "Etsy rose gold leather search",
-      "url": "https://www.etsy.com/jp/search?q=rose+gold+brown+leather",
-      "category": "Search Shelves",
-      "base_score": 88,
-      "max_items": 8,
-      "featured_limit": 3,
-      "tags": [
-        "auto-collected",
-        "Etsy",
-        "rose gold",
-        "brown leather",
-        "accessories"
-      ]
-    },
-    {
-      "id": "etsy-oxblood-bridle",
-      "title": "Etsy oxblood bridle leather search",
-      "url": "https://www.etsy.com/jp/search?q=oxblood+bridle+leather",
-      "category": "Search Shelves",
-      "base_score": 87,
-      "max_items": 8,
-      "featured_limit": 2,
-      "tags": [
-        "auto-collected",
-        "Etsy",
-        "oxblood",
-        "bridle leather",
-        "vintage"
-      ]
-    },
-    {
-      "id": "etsy-walnut-brass-desk",
-      "title": "Etsy walnut brass desk accessories search",
-      "url": "https://www.etsy.com/jp/search?q=walnut+brass+desk+accessories",
-      "category": "Search Shelves",
-      "base_score": 86,
-      "max_items": 8,
-      "featured_limit": 2,
-      "tags": [
-        "auto-collected",
-        "Etsy",
-        "walnut",
-        "brass",
-        "desk"
-      ]
-    },
-    {
-      "id": "etsy-copper-pen",
-      "title": "Etsy copper pen search",
-      "url": "https://www.etsy.com/jp/search?q=copper+pen",
-      "category": "Search Shelves",
-      "base_score": 84,
-      "max_items": 6,
-      "featured_limit": 2,
-      "tags": [
-        "auto-collected",
-        "Etsy",
-        "copper",
-        "pen",
-        "writing"
       ]
     }
   ]
