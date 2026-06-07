@@ -6,6 +6,26 @@
   },
   "items": [
     {
+      "title": "ホルターネックドレス / ブラウン",
+      "url": "https://vulcanize.jp/products/hrf1486xxrl?variant=51822195769626",
+      "category": "Search Shelves",
+      "score": 96,
+      "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
+      "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
+      "image": "images/collected/vulcanize-brown-00-b61c9c8993e1.jpg",
+      "featured": true,
+      "source_id": "vulcanize-brown",
+      "collected_at": "2026-06-07T09:47:59Z",
+      "tags": [
+        "auto-collected",
+        "VULCANIZE",
+        "brown",
+        "British",
+        "leather",
+        "collected-image"
+      ]
+    },
+    {
       "title": "VULCANIZE LONDON brown search",
       "url": "https://vulcanize.jp/search?type=product&q=%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3",
       "category": "Search Shelves",
@@ -22,14 +42,16 @@
       ]
     },
     {
-      "title": "ホルターネックドレス / ブラウン",
-      "url": "https://vulcanize.jp/products/hrf1486xxrl?variant=51822195769626",
+      "title": "ネイルケアセットS（4P） ブラウン",
+      "url": "https://vulcanize.jp/products/truefitt-and-hill-nail-care-set-s-4p-brown?variant=51779002237210",
       "category": "Search Shelves",
       "score": 95,
       "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
       "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-00-b61c9c8993e1.jpg",
+      "image": "images/collected/vulcanize-brown-01-e194fa8c43b6.webp",
       "featured": true,
+      "source_id": "vulcanize-brown",
+      "collected_at": "2026-06-07T09:47:59Z",
       "tags": [
         "auto-collected",
         "VULCANIZE",
@@ -56,20 +78,41 @@
       ]
     },
     {
-      "title": "ホルターネックドレス / ブラウン",
-      "url": "https://vulcanize.jp/products/hrf1486xxrl?variant=51822195769626",
+      "title": "ハンカチ ストライプシアサッカー / ブラウン",
+      "url": "https://vulcanize.jp/products/hackett-london-stripe-seersucker-pocket-square-brown?variant=51793748001050",
       "category": "Search Shelves",
       "score": 94,
       "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
       "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-01-39995c590441.jpg",
+      "image": "images/collected/vulcanize-brown-02-ed734066107a.webp",
       "featured": true,
+      "source_id": "vulcanize-brown",
+      "collected_at": "2026-06-07T09:47:59Z",
       "tags": [
         "auto-collected",
         "VULCANIZE",
         "brown",
         "British",
         "leather",
+        "collected-image"
+      ]
+    },
+    {
+      "title": "スエードレザー ボストンバッグ",
+      "url": "https://vulcanize.jp/products/hackett-london-suede-leather-boston-bag?variant=52149483667738",
+      "category": "Search Shelves",
+      "score": 94,
+      "description": "VULCANIZE LONDON leather search から自動収集した画像付き候補。",
+      "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
+      "image": "images/collected/vulcanize-leather-00-3b54e5f0d155.webp",
+      "featured": true,
+      "source_id": "vulcanize-leather",
+      "collected_at": "2026-06-07T09:47:59Z",
+      "tags": [
+        "auto-collected",
+        "VULCANIZE",
+        "leather",
+        "British",
         "collected-image"
       ]
     },
@@ -89,20 +132,21 @@
       ]
     },
     {
-      "title": "ホルターネックドレス / ブラウン",
-      "url": "https://vulcanize.jp/products/hrf1486xxrl?variant=51822195769626",
+      "title": "Panama レザー 名刺カードケース / ネイビー",
+      "url": "https://vulcanize.jp/products/smythson-panama-card-case-navy?variant=51862386966810",
       "category": "Search Shelves",
       "score": 93,
-      "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
+      "description": "VULCANIZE LONDON leather search から自動収集した画像付き候補。",
       "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-02-e55631a59d71.jpg",
+      "image": "images/collected/vulcanize-leather-01-7466f7057017.webp",
       "featured": true,
+      "source_id": "vulcanize-leather",
+      "collected_at": "2026-06-07T09:47:59Z",
       "tags": [
         "auto-collected",
         "VULCANIZE",
-        "brown",
-        "British",
         "leather",
+        "British",
         "collected-image"
       ]
     },
@@ -122,20 +166,22 @@
       ]
     },
     {
-      "title": "ホルターネックドレス / ブラウン",
-      "url": "https://vulcanize.jp/products/hrf1486xxrl?variant=51822195769626",
+      "title": "コットンバッグ スケッチ One Size",
+      "url": "https://vulcanize.jp/products/dr-harris-sketch-cotton-bag-one-size?variant=52130248032538",
       "category": "Search Shelves",
       "score": 92,
-      "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
+      "description": "VULCANIZE LONDON bag search から自動収集した画像付き候補。",
       "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-03-b810523e141d.jpg",
+      "image": "images/collected/vulcanize-bag-00-65cf7673b435.webp",
       "featured": true,
+      "source_id": "vulcanize-bag",
+      "collected_at": "2026-06-07T09:47:59Z",
       "tags": [
         "auto-collected",
         "VULCANIZE",
-        "brown",
+        "bag",
         "British",
-        "leather",
+        "luggage",
         "collected-image"
       ]
     },
@@ -156,20 +202,22 @@
       ]
     },
     {
-      "title": "ホルターネックドレス / ブラウン",
-      "url": "https://vulcanize.jp/products/hrf1486xxrl?variant=51822195769626",
+      "title": "コットンバッグ アニバーサリー One Size",
+      "url": "https://vulcanize.jp/products/dr-harris-anniversary-cotton-bag-one-size?variant=52130248229146",
       "category": "Search Shelves",
       "score": 91,
-      "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
+      "description": "VULCANIZE LONDON bag search から自動収集した画像付き候補。",
       "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-04-c6f03a856fcb.webp",
+      "image": "images/collected/vulcanize-bag-01-65e1e9f39e48.webp",
       "featured": true,
+      "source_id": "vulcanize-bag",
+      "collected_at": "2026-06-07T09:47:59Z",
       "tags": [
         "auto-collected",
         "VULCANIZE",
-        "brown",
+        "bag",
         "British",
-        "leather",
+        "luggage",
         "collected-image"
       ]
     },
@@ -190,20 +238,22 @@
       ]
     },
     {
-      "title": "ネイルケアセットS（4P） ブラウン",
-      "url": "https://vulcanize.jp/products/truefitt-and-hill-nail-care-set-s-4p-brown?variant=51779002237210",
+      "title": "RIKR テックポーチ トラベルバッグ / ブラック",
+      "url": "https://vulcanize.jp/products/grq8312ff0u?variant=51793790435610",
       "category": "Search Shelves",
       "score": 90,
-      "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
+      "description": "VULCANIZE LONDON bag search から自動収集した画像付き候補。",
       "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-05-e194fa8c43b6.webp",
+      "image": "images/collected/vulcanize-bag-02-8b522b66ced0.webp",
       "featured": true,
+      "source_id": "vulcanize-bag",
+      "collected_at": "2026-06-07T09:47:59Z",
       "tags": [
         "auto-collected",
         "VULCANIZE",
-        "brown",
+        "bag",
         "British",
-        "leather",
+        "luggage",
         "collected-image"
       ]
     },
@@ -223,24 +273,6 @@
       ]
     },
     {
-      "title": "ネイルケアセットS（4P） ブラウン",
-      "url": "https://vulcanize.jp/products/truefitt-and-hill-nail-care-set-s-4p-brown?variant=51779002237210",
-      "category": "Search Shelves",
-      "score": 89,
-      "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
-      "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-06-28484f2f876a.webp",
-      "featured": true,
-      "tags": [
-        "auto-collected",
-        "VULCANIZE",
-        "brown",
-        "British",
-        "leather",
-        "collected-image"
-      ]
-    },
-    {
       "title": "Etsy rose gold leather search",
       "url": "https://www.etsy.com/search?q=rose%20gold%20brown%20leather%20accessories",
       "category": "Search Shelves",
@@ -253,24 +285,6 @@
         "rose gold",
         "brown leather",
         "accessories"
-      ]
-    },
-    {
-      "title": "ハンカチ ストライプシアサッカー / ブラウン",
-      "url": "https://vulcanize.jp/products/hackett-london-stripe-seersucker-pocket-square-brown?variant=51793748001050",
-      "category": "Search Shelves",
-      "score": 88,
-      "description": "VULCANIZE LONDON brown search から自動収集した画像付き候補。",
-      "reason": "検索結果から画像とリンクを抽出し、ローカル画像として保存したカードです。内容は目視確認してください。",
-      "image": "images/collected/vulcanize-brown-07-ed734066107a.webp",
-      "featured": true,
-      "tags": [
-        "auto-collected",
-        "VULCANIZE",
-        "brown",
-        "British",
-        "leather",
-        "collected-image"
       ]
     },
     {
