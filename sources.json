@@ -56,7 +56,7 @@
     {
       "id": "etsy-brown-leather-brass",
       "title": "Etsy brown leather brass search",
-      "url": "https://www.etsy.com/search?q=brown%20leather%20brass%20accessories",
+      "url": ""url": "https://www.etsy.com/jp/search?q=brown+leather+brass"",
       "category": "Search Shelves",
       "base_score": 90,
       "max_items": 8,
@@ -73,7 +73,7 @@
     {
       "id": "etsy-rose-gold-leather",
       "title": "Etsy rose gold leather search",
-      "url": "https://www.etsy.com/search?q=rose%20gold%20brown%20leather%20accessories",
+      "url": ""url": "https://www.etsy.com/jp/search?q=rose+gold+brown+leather"",
       "category": "Search Shelves",
       "base_score": 88,
       "max_items": 8,
@@ -89,7 +89,7 @@
     {
       "id": "etsy-oxblood-bridle",
       "title": "Etsy oxblood bridle leather search",
-      "url": "https://www.etsy.com/search?q=oxblood%20bridle%20leather",
+      "url": ""url": "https://www.etsy.com/jp/search?q=oxblood+bridle+leather"",
       "category": "Search Shelves",
       "base_score": 87,
       "max_items": 8,
@@ -105,7 +105,7 @@
     {
       "id": "etsy-walnut-brass-desk",
       "title": "Etsy walnut brass desk accessories search",
-      "url": "https://www.etsy.com/search?q=walnut%20brass%20desk%20accessories",
+      "url": ""url": "https://www.etsy.com/jp/search?q=walnut+brass+desk+accessories"",
       "category": "Search Shelves",
       "base_score": 86,
       "max_items": 8,
@@ -121,7 +121,7 @@
     {
       "id": "etsy-copper-pen",
       "title": "Etsy copper pen search",
-      "url": "https://www.etsy.com/search?q=copper%20pen",
+      "url": ""url": "https://www.etsy.com/jp/search?q=copper+pen"",
       "category": "Search Shelves",
       "base_score": 84,
       "max_items": 6,
