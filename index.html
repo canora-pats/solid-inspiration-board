@@ -4,13 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Solid Inspiration | Canora Pats</title>
-
-  <!-- 検索避け：完全な非公開ではありませんが、検索結果に出にくくします -->
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="referrer" content="no-referrer-when-downgrade">
-
   <meta name="description" content="A quiet style board by Canora Pats: leather, brass, brown, British style, Italian automotive elegance, writing tools, interiors and archive inspirations.">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,19 +17,25 @@
     <p class="eyebrow">Canora Pats presents</p>
     <h1>Solid Inspiration</h1>
     <p class="lead">革、真鍮、余白、道具のための静かな蒐集帖</p>
-    <p class="sublead">
-      Dark brown, brass, leather, British restraint and Italian automotive elegance.
-    </p>
+    <p class="sublead">Dark brown, brass, leather, British restraint and Italian automotive elegance.</p>
   </header>
 
   <main>
+    <section class="hero-gallery panel" aria-label="featured inspirations">
+      <div class="gallery-heading">
+        <div>
+          <p class="section-kicker">Featured frame</p>
+          <h2>Floating inspirations</h2>
+        </div>
+        <p>写真が登録されたカードは大きく表示されます。未登録のものは、色と文字のプレースホルダーで表示します。</p>
+      </div>
+      <div class="floating-stage" id="heroStage"></div>
+    </section>
+
     <section class="panel intro-panel">
       <div>
         <h2>Style filter</h2>
-        <p>
-          このポータルは、単なるリンク集ではなく、色・素材・質感・実用品質の観点で
-          「Canora Pats / Solid Inspiration」に近いものを集めるための初期ボードです。
-        </p>
+        <p>このポータルは、単なるリンク集ではなく、色・素材・質感・実用品質の観点で「Canora Pats / Solid Inspiration」に近いものを集めるための初期ボードです。</p>
       </div>
       <ul class="filter-list" aria-label="style filter">
         <li>Dark brown / Cognac / Oxblood / Beige</li>
@@ -51,6 +54,7 @@
       <button class="chip" data-filter="Interior & Study">Interior & Study</button>
       <button class="chip" data-filter="Articles & Videos">Articles & Videos</button>
       <button class="chip" data-filter="Archive Inspirations">Archive Inspirations</button>
+      <button class="chip" data-filter="Search Shelves">Search Shelves</button>
     </nav>
 
     <section class="toolbar panel">
@@ -62,24 +66,19 @@
     <section id="cards" class="cards" aria-live="polite"></section>
 
     <section class="panel note-panel">
-      <h2>Next step</h2>
-      <p>
-        初期版では手動 curated board として動作します。次段階では RSS / YouTube / ニュースレター等を
-        収集し、AIで「Canora fit score」を付与する仕組みに拡張できます。
-      </p>
+      <h2>Image note</h2>
+      <p>写真を表示するには、各カードに <code>"image": "images/example.jpg"</code> または外部画像URLを追加します。公式サイトの検索結果サムネイルを自動で抜き出すには、将来的に収集スクリプト側で商品URL・画像URLを抽出し、<code>data.json</code> に書き込む方式が安全です。</p>
     </section>
   </main>
 
-  <footer>
-    <p>Solid Inspiration by Canora Pats. Built as a private-style public GitHub Pages board.</p>
-  </footer>
+  <footer><p>Solid Inspiration by Canora Pats. Built as a private-style public GitHub Pages board.</p></footer>
 
   <script>
     const cardsEl = document.getElementById("cards");
+    const heroStageEl = document.getElementById("heroStage");
     const searchEl = document.getElementById("search");
     const countEl = document.getElementById("count");
     const chips = Array.from(document.querySelectorAll(".chip"));
-
     let allItems = [];
     let activeFilter = "all";
 
@@ -90,46 +89,52 @@
       return "reference";
     }
 
-    function normalize(s) {
-      return (s || "").toString().toLowerCase();
-    }
+    function normalize(s) { return (s || "").toString().toLowerCase(); }
 
     function itemMatches(item, query) {
       if (!query) return true;
-      const haystack = [
-        item.title, item.category, item.description, item.reason,
-        ...(item.tags || [])
-      ].map(normalize).join(" ");
+      const haystack = [item.title, item.category, item.description, item.reason, ...(item.tags || [])].map(normalize).join(" ");
       return haystack.includes(normalize(query));
     }
 
-    function render() {
+    function initials(item) {
+      return (item.title || "SI").split(/\s+/).map(w => w[0]).join("").slice(0, 3).toUpperCase();
+    }
+
+    function imageMarkup(item, kind) {
+      if (item.image) {
+        return `<div class="${kind}-image media"><img src="${item.image}" alt="${item.title}" loading="lazy"><div class="fallback"><span>${initials(item)}</span><small>${item.category}</small></div></div>`;
+      }
+      return `<div class="image-fallback ${kind}"><span class="fallback-initials">${initials(item)}</span><span class="fallback-category">${item.category}</span></div>`;
+    }
+
+    function renderHero() {
+      const featured = allItems.filter(item => item.featured).sort((a, b) => b.score - a.score).slice(0, 10);
+      const heroItems = featured.length ? featured : allItems.slice(0, 8);
+      const loopItems = [...heroItems, ...heroItems];
+      heroStageEl.innerHTML = `<div class="hero-track">${loopItems.map((item, index) => `
+        <a class="hero-card float-${index % 5}" href="${item.url}" target="_blank" rel="noopener noreferrer">
+          ${imageMarkup(item, "hero")}
+          <div class="hero-caption"><span>${item.category}</span><strong>${item.title}</strong></div>
+        </a>`).join("")}</div>`;
+    }
+
+    function renderCards() {
       const query = searchEl.value.trim();
-      const filtered = allItems.filter(item => {
-        const byCategory = activeFilter === "all" || item.category === activeFilter;
-        return byCategory && itemMatches(item, query);
-      });
-
+      const filtered = allItems.filter(item => (activeFilter === "all" || item.category === activeFilter) && itemMatches(item, query));
       countEl.textContent = `${filtered.length} items`;
-
       cardsEl.innerHTML = filtered.map(item => `
         <article class="card">
-          <div class="card-topline">
-            <span class="category">${item.category}</span>
-            <span class="score ${scoreClass(item.score)}">${item.score}</span>
+          ${imageMarkup(item, "card")}
+          <div class="card-body">
+            <div class="card-topline"><span class="category">${item.category}</span><span class="score ${scoreClass(item.score)}">${item.score}</span></div>
+            <h3><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h3>
+            <p class="description">${item.description}</p>
+            <p class="reason">${item.reason}</p>
+            <div class="tags">${(item.tags || []).map(tag => `<span>${tag}</span>`).join("")}</div>
           </div>
-          <h3><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h3>
-          <p class="description">${item.description}</p>
-          <p class="reason">${item.reason}</p>
-          <div class="tags">
-            ${(item.tags || []).map(tag => `<span>${tag}</span>`).join("")}
-          </div>
-        </article>
-      `).join("");
-
-      if (filtered.length === 0) {
-        cardsEl.innerHTML = `<p class="empty">該当するカードがありません。</p>`;
-      }
+        </article>`).join("");
+      if (filtered.length === 0) cardsEl.innerHTML = `<p class="empty">該当するカードがありません。</p>`;
     }
 
     async function init() {
@@ -137,23 +142,21 @@
         const response = await fetch("data.json", { cache: "no-store" });
         const data = await response.json();
         allItems = (data.items || []).sort((a, b) => b.score - a.score);
-        render();
+        renderHero();
+        renderCards();
       } catch (error) {
         cardsEl.innerHTML = `<p class="empty">data.json を読み込めませんでした。</p>`;
         console.error(error);
       }
     }
 
-    chips.forEach(chip => {
-      chip.addEventListener("click", () => {
-        activeFilter = chip.dataset.filter;
-        chips.forEach(c => c.classList.remove("active"));
-        chip.classList.add("active");
-        render();
-      });
-    });
-
-    searchEl.addEventListener("input", render);
+    chips.forEach(chip => chip.addEventListener("click", () => {
+      activeFilter = chip.dataset.filter;
+      chips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      renderCards();
+    }));
+    searchEl.addEventListener("input", renderCards);
     init();
   </script>
 </body>
