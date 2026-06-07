@@ -21,6 +21,19 @@
       ]
     },
     {
+      "title": "Solid Inspiration memo",
+      "url": "https://canora-pats.github.io/solid-inspiration-board/",
+      "category": "Archive Inspirations",
+      "score": 100,
+      "description": "このポータル自身の動作確認用カード。",
+      "reason": "GitHub Pagesでカードを追加・更新できるかを確認するためのテスト。",
+      "tags": [
+        "test",
+        "Solid Inspiration",
+        "Canora Pats"
+      ]
+    },
+    {
       "title": "BRITISH MADE",
       "url": "https://www.british-made.jp/",
       "category": "British Style",
